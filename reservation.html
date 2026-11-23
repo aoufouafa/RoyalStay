@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Royal Stay - My Reservations</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell my-reservations-screen">
+    <div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-indicators"><span>▮▮▮</span><span>◔</span><span class="ios-battery"></span></span></div>
+    <header class="topbar compact">
+      <a class="icon-btn" href="home.html" aria-label="Back to home">‹</a>
+      <strong>My Reservations</strong>
+      <span></span>
+    </header>
+    <section class="my-reservations-content">
+      <div class="reservation-filters" role="group" aria-label="Filter reservations">
+        <button class="active" type="button" data-status="all">All</button>
+        <button type="button" data-status="confirmed">Confirmed</button>
+        <button type="button" data-status="cancelled">Cancelled</button>
+      </div>
+      <article class="reservation-card" data-status="confirmed">
+        <div class="reservation-card-main">
+          <img src="assets/images/hotel1.jpg" alt="Hotel exterior">
+          <div class="reservation-card-info">
+            <h2>Hotel name</h2>
+            <p>Check-in / Check-out</p>
+            <span class="reservation-card-status">Confirmed</span>
+          </div>
+        </div>
+        <a class="reservation-details-link" href="reservation_details.html">View details <span>→</span></a>
+      </article>
+      <article class="reservation-card" data-status="cancelled">
+        <div class="reservation-card-main">
+          <img src="assets/images/hotel2.jpg" alt="Beachfront hotel exterior">
+          <div class="reservation-card-info">
+            <h2>Hotel name</h2>
+            <p>Check-in / Check-out</p>
+            <span class="reservation-card-status">Cancelled</span>
+          </div>
+        </div>
+        <a class="reservation-details-link" href="reservation_details.html">View details <span>→</span></a>
+      </article>
+    </section>
+    <nav class="bottom-nav">
+      <a href="home.html"><span>⌂</span>Home</a>
+      <a href="results.html"><span>⌕</span>Search</a>
+      <a class="active" href="reservation.html"><span>▦</span>Reservations</a>
+    </nav>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

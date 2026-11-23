@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Royal Stay - Search</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell home-screen">
+    <div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-indicators"><span>▮▮▮</span><span>◔</span><span class="ios-battery"></span></span></div>
+    <div class="home-photo" aria-hidden="true"></div>
+    <header class="brand home-brand">
+      <div class="crown crown-css" aria-hidden="true"></div>
+      <div class="brand-name">ROYAL STAY</div>
+      <div class="brand-tag">Find your perfect hotel</div>
+    </header>
+    <section class="home-search-panel">
+      <h1>Where are you going?</h1>
+      <form id="searchForm" action="results.html" novalidate>
+        <div class="home-form-field">
+          <label for="destination">Destination</label>
+          <div class="home-input-pill"><span>⌖</span><input id="destination" type="text" placeholder="Choose a destination" autocomplete="off"></div>
+        </div>
+        <div class="home-form-row">
+          <div class="home-form-field">
+            <label for="checkin">Check-in</label>
+            <div class="home-input-pill"><input id="checkin" type="date" value="2026-12-12"></div>
+          </div>
+          <div class="home-form-field">
+            <label for="checkout">Check-out</label>
+            <div class="home-input-pill"><input id="checkout" type="date" value="2026-12-15"></div>
+          </div>
+        </div>
+        <div class="home-form-row">
+          <div class="home-form-field">
+            <label for="guests">Guests</label>
+            <div class="home-input-pill"><span>⊕</span><select id="guests"><option>2</option><option>1</option><option>3</option><option>4</option></select></div>
+          </div>
+          <div class="home-form-field">
+            <label for="rooms">Rooms</label>
+            <div class="home-input-pill"><span>♙</span><select id="rooms"><option>1</option><option>2</option><option>3</option></select></div>
+          </div>
+        </div>
+        <p class="search-error" id="searchError" role="alert" hidden>Please enter a destination</p>
+        <button class="primary-btn" type="submit">Search</button>
+      </form>
+    </section>
+    <nav class="bottom-nav">
+      <a class="active" href="home.html"><span>⌂</span>Home</a>
+      <a href="results.html"><span>⌕</span>Search</a>
+      <a href="reservation.html"><span>▦</span>Reservations</a>
+    </nav>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

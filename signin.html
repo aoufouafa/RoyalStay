@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Royal Stay - Sign In</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell auth-screen auth-screen--signin">
+    <div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-indicators"><span>▮▮▮</span><span>◔</span><span class="ios-battery"></span></span></div>
+    <header class="brand brand-center auth-brand">
+      <div class="crown">♛</div>
+      <div>
+        <div class="brand-name">ROYAL STAY</div>
+        <div class="brand-tag">Find your perfect hotel</div>
+      </div>
+    </header>
+    <section class="auth-card auth-card--signin">
+      <h1>Welcome Back!</h1>
+      <p class="muted">Sign in to continue your journey</p>
+      <form id="loginForm" novalidate>
+        <label class="field"><span>✉</span><input id="email" type="email" placeholder="Email Address" autocomplete="email"></label>
+        <label class="field"><span>▣</span><input id="password" type="password" placeholder="Password" autocomplete="current-password"><b class="field-eye">◉</b></label>
+        <a class="forgot-password" href="#">Forgot Password?</a>
+        <p class="error" id="errorMessage" aria-live="polite"></p>
+        <button class="primary-btn" type="submit">Sign In <span>→</span></button>
+      </form>
+      <div class="social-login-buttons">
+        <button class="social-btn" type="button"><b>G</b><span>Continue with Google</span></button>
+        <button class="social-btn" type="button"><b>●</b><span>Continue with Apple</span></button>
+      </div>
+      <p class="auth-link">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+    </section>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

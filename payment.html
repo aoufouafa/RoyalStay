@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Royal Stay - Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell payment-page">
+    <div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-indicators"><span>▮▮▮</span><span>◔</span><span class="ios-battery"></span></span></div>
+    <header class="topbar compact">
+      <a class="icon-btn" href="rooms.html" aria-label="Back to rooms">‹</a>
+      <strong>Selected room</strong>
+      <span></span>
+    </header>
+    <section class="payment-content">
+      <article class="selected-room-card">
+        <img class="selected-room-photo" src="assets/images/room1.jpg" alt="Selected hotel room">
+        <div class="selected-room-copy">
+          <h1>Suite</h1>
+          <p>2 guests · 1 king bed</p>
+          <strong>Hotel Luxe</strong>
+        </div>
+      </article>
+      <div class="stay-summary">
+        <div><span>Number of nights</span><strong>3 nights</strong></div>
+        <div><span>Total price</span><strong>$540</strong></div>
+      </div>
+      <h2>Choose payment method</h2>
+      <form action="confirmation.html">
+        <label class="payment-method"><input type="radio" name="payment" value="edahabia" checked><span>Edahabia</span></label>
+        <label class="payment-method"><input type="radio" name="payment" value="cib"><span>CIB</span></label>
+        <label class="payment-method"><input type="radio" name="payment" value="hotel"><span>Cash at hotel</span></label>
+        <label class="payment-method"><input type="radio" name="payment" value="baridimob"><span>BaridiMob</span></label>
+        <button class="primary-btn" type="submit">Confirm reservation</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

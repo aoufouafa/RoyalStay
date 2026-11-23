@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Royal Stay - Create Account</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell auth-screen auth-screen--signup">
+    <div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-indicators"><span>▮▮▮</span><span>◔</span><span class="ios-battery"></span></span></div>
+    <header class="brand brand-center auth-brand">
+      <div class="crown">♛</div>
+      <div><div class="brand-name">ROYAL STAY</div><div class="brand-tag">Find your perfect hotel</div></div>
+    </header>
+    <section class="auth-card auth-card--signup">
+      <h1>Create Your Account</h1>
+      <form id="signupForm" novalidate>
+        <label class="field"><span>♙</span><input id="firstName" type="text" placeholder="First Name" autocomplete="given-name" required></label>
+        <label class="field"><span>♙</span><input id="lastName" type="text" placeholder="Last Name" autocomplete="family-name" required></label>
+        <label class="field"><span>✉</span><input id="signupEmail" type="email" placeholder="Email Address" autocomplete="email" required></label>
+        <label class="field"><span>▣</span><input id="signupPassword" type="password" placeholder="Password" minlength="6" autocomplete="new-password" required><b class="field-eye">◉</b></label>
+        <label class="field"><span>▣</span><input id="confirmPassword" type="password" placeholder="Confirm Password" minlength="6" autocomplete="new-password" required><b class="field-eye">◉</b></label>
+        <label class="field"><span>⚑</span><select id="country" required><option value="">Country / Region</option><option>Algeria</option><option>United States</option><option>United Kingdom</option></select></label>
+        <div class="phone-field">
+          <label class="country-code"><select aria-label="Country calling code"><option>+1</option><option>+213</option><option>+44</option></select></label>
+          <span>⌕</span>
+          <input type="tel" placeholder="Mobile Phone" autocomplete="tel" required>
+        </div>
+        <p class="error" id="signupError" aria-live="polite"></p>
+        <button class="primary-btn" type="submit">Sign Up <span>→</span></button>
+      </form>
+      <p class="auth-link">Already have an account? <a href="signin.html">Sign In</a></p>
+    </section>
+  </main>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
